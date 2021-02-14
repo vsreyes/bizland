@@ -81,6 +81,32 @@
     </div>
   </header>
 
+  <!-- Section: Boxes -->
+  <section class="section-boxes center">
+    <div class="row">
+      <div class="col s12 m6 l3 blue white-text box">
+        <i class="material-icons medium">show_cart</i>
+        <h4>Grow Your Business</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio temporibus nemo voluptas in voluptatibus id omnis. Ipsum iure iste laborum.</p>
+      </div>
+      <div class="col s12 m6 l3 purple white-text box">
+        <i class="material-icons medium">people</i>
+        <h4>Professional Advisors</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio temporibus nemo voluptas in voluptatibus id omnis. Ipsum iure iste laborum.</p>
+      </div>
+      <div class="col s12 m6 l3 blue white-text box">
+        <i class="material-icons medium">show_cart</i>
+        <h4>Grow Your Business</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio temporibus nemo voluptas in voluptatibus id omnis. Ipsum iure iste laborum.</p>
+      </div>
+      <div class="col s12 m6 l3 blue white-text box">
+        <i class="material-icons medium">show_cart</i>
+        <h4>Grow Your Business</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio temporibus nemo voluptas in voluptatibus id omnis. Ipsum iure iste laborum.</p>
+      </div>
+    </div>
+  </section>
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -95,11 +121,19 @@
           selector: '.main-text', offset:0, callback: function(el) {
             Materialize.fadeInImage($(el));
           }
+        },
+        {
+          selector: '.navbar-fixed', offset:1500, callback: function() {
+            $('nav').removeClass('transparent');
+            $('nav').addClass('blue-grey darken-3');
+
+
+          }
         }
       ]
 
       Materialize.scrollFire(options);
-      
+
     });
   </script>
 </body>
