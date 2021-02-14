@@ -89,6 +89,17 @@
       // Init Sidenav
       $('.button-collapse').sideNav();
 
+      // Scrollfire
+      const options = [
+        {
+          selector: '.main-text', offset:0, callback: function(el) {
+            Materialize.fadeInImage($(el));
+          }
+        }
+      ]
+
+      Materialize.scrollFire(options);
+      
     });
   </script>
 </body>
