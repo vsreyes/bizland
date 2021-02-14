@@ -296,7 +296,7 @@
           zoom: 12,
           streetViewControl: false,
           scaleControl: true,
-          mapTypeId: google.maps.mapTypeId.ROADMAP,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
           center: centerLatLng
         }
 
@@ -305,7 +305,7 @@
 
         // Show Marker
         marker = new google.maps.Marker({
-          position: LatLng,
+          position: latLng,
           map: map,
           draggable: false,
           animation: google.maps.Animation.DROP
